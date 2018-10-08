@@ -33,13 +33,16 @@ plugins:
 collections:
   - products
 
-webserver_headers:
-  - - Access-Control-Allow-Origin
-    - "*"
-  - - Access-Control-Allow-Methods
-    - GET, OPTIONS, HEAD
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+#webserver_headers:
+#  - - Access-Control-Allow-Origin
+#    - "*"
+#  - - Access-Control-Allow-Methods
+#    - GET, OPTIONS, HEAD
 
-    
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
